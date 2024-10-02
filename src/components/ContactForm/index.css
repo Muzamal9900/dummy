@@ -1,0 +1,118 @@
+.contact-form-container {
+    background-color:unset;
+    /* max-width: 792px;
+    width: 792px; */
+    width: auto;
+    margin-top: 20px;
+  }
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group input {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color:unset;
+    border: 0px;
+    border-bottom: 1px solid #909090;
+
+    color: #fff; /* This sets the input text color */
+    font-size: 20px;
+  }
+  .form-group input::placeholder {
+    color: #646464; /* Placeholder text color */
+    font-size: 22px; /* Placeholder text size */
+    font-weight: 400; /* Placeholder text weight */
+}
+  
+  button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+ 
+  .send-button {
+    max-width: 240px;
+   
+  }
+  .form-group input:focus {
+    outline: none;
+}
+@media (max-width: 1450px) { 
+  
+ .contact-form-container form {
+  gap: 40px;
+ }
+ .form-group input::placeholder {
+  font-size: 20px; /* Placeholder text size */
+}
+.form-group input {
+
+  font-size: 18px;
+}
+  }
+  @media (max-width: 1210px) { 
+   
+   .contact-form-container form {
+    gap: 30px;
+   }
+   .form-group input::placeholder {
+    font-size: 18px; /* Placeholder text size */
+  }
+  .form-group input {
+    font-size: 16px;
+  }
+    }
+    @media (max-width: 970px) { 
+    
+     .contact-form-container form {
+      gap: 20px;
+     }
+     .form-group input::placeholder {
+      font-size: 12px; /* Placeholder text size */
+    }
+    .form-group input {
+    
+      font-size: 10px;
+    }
+  
+      }
+      @media (max-width: 730px) { 
+    
+        .contact-form-container form {
+         gap: 20px;
+        }
+        .form-group input::placeholder {
+         font-size: 12px; /* Placeholder text size */
+       }
+       .form-group input {
+       
+         font-size: 10px;
+       }
+       
+         }
+      @media (max-width: 500px) { 
+        .contact-form-container {
+       max-width: 350px;
+       
+        }
+       .contact-form-container form {
+        gap: 10px;
+       }
+       .form-group input::placeholder {
+        font-size: 10px; /* Placeholder text size */
+      }
+      .form-group input {
+      
+        font-size: 8px;
+      }
+        }

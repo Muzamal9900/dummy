@@ -1,0 +1,28 @@
+
+.ContactUsSection-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ContactUsSection-parent-details {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ContactUsSection-parent-details-button {
+    display:flex ;
+    gap: 30px;
+    margin-top: 53px;
+}
+.ContactUsSection-parent-details-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us-page {
+    background-color: #0F0F0F;
+
+}

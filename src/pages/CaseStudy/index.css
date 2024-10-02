@@ -1,0 +1,292 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px); /* Start from -50px on the X-axis */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+.case-study {
+    background-color: #fff;
+}
+.case-study-main {
+    padding: 90px 120px 90px 120px;
+display: flex;
+flex-direction: column;
+animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+max-width: calc(1690px + 240px);
+margin: 0 auto;
+}
+.case-study-main.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail {
+    margin-top: 105px;
+    margin-bottom: 45px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 45px;
+    margin-top: 54px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+   
+}
+.case-study-main-detail-parent-text.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent-images {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent-images.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.flex-row {
+    display: flex;
+  justify-content: space-between;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.flex-row.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.flex-row-secound {
+    display: flex;
+  justify-content: space-between;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.flex-row-secound.animateInView {
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    }
+.flex-row-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 816px;
+    height: 680px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.flex-row-text.animateInView {
+animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190px;
+    animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+
+.case-study-end.animateInView {
+ animation: fadeIn 3s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+animation-direction: alternate;
+animation-duration: 2s;
+}
+.case-study-main-detail-parent img {
+    padding-left: 20px;
+}
+.flex-row-secound img {
+    padding-right: 20px;
+}
+@media (max-width: 1690px) {
+    .case-study-main {
+        max-width: calc(1450px + 220px);
+        padding: 80px 110px 80px 110px;
+    }
+    .case-main-image svg {
+        width:  calc(1450px - 220px);
+        height:auto;
+    }
+    .case-study-main-detail-parent  img {
+        width:  calc(600px - 220px);
+        
+    }
+    .flex-row img {
+        width: calc(600px - 220px);
+    }
+    .flex-row-secound img {
+        width: calc(600px - 220px);
+    }
+ 
+     } 
+     @media (max-width: 1450px) {
+        .case-study-main {
+            max-width: calc(1210px + 160px);
+            padding: 80px 80px 80px 80px;
+        }
+        .case-main-image svg {
+            width: 1210px;
+        }
+        .case-study-main-detail-parent  img {
+            width: 500px;
+        }
+        .case-study-main-detail-parent-text P {
+            max-width: 600px;
+            font-size: 22px;
+        }
+        .flex-row-text p {
+            max-width: 570px;
+        }
+         } 
+         @media (max-width: 1210px) {
+            .case-study-main {
+                max-width: calc(970px + 160px);
+            }
+            .case-main-image svg {
+                width: 970px;
+            }
+            .case-study-main-detail-parent-text  {
+                width: 50%;
+            }
+            .case-study-main-detail-parent img {
+                width: 440px;
+            } 
+            .flex-row img {
+                width: 400px;
+            }
+            .flex-row-secound img {
+                width: 450px;
+            }
+            .flex-row-secound p {
+                width: 460px;
+                font-size: 22px;
+            }
+             } 
+             @media (max-width: 970px) {
+                .case-study-main {
+                    max-width:  calc(730px + 160px);
+                    padding: 40px 60px 40px 60px;
+                }
+                .case-main-image svg {
+                    width:  730px;
+                }
+                .case-study-main-detail-parent {
+                    flex-direction: column;
+                }
+                .case-study-main-detail-parent-text  {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .case-study-main-detail-parent-text  p {
+                  
+                    max-width: 730px;
+                }
+                .case-study-main-detail-parent img {
+                    width:  calc(730px - 160px);
+                }
+                .flex-row img {
+                    width: 300px;
+                }
+                .flex-row-secound p {
+                    width: 285px;
+                    font-size: 20px;
+                }
+                .flex-row-secound img {
+                    width: 400px;
+                }
+                 } 
+                 @media (max-width: 730px) {
+                    .case-study-main {
+                        max-width:  calc(500px + 120px);
+                        padding: 60px 40px 60px 40px;
+                    }
+                    .case-main-image svg {
+                        width:  500px;
+                    }
+                    .case-study-main-detail-parent-text P { 
+                        font-size: 20px;
+                    }
+                    .case-study-main-detail-parent img {
+                        width: 500px;
+                    }
+                    .flex-row img {
+                        width: 200px;
+                    }
+                    .flex-row-secound {
+                        flex-direction: column;
+                        
+                    }
+                    .flex-row-secound img {
+                        width: auto;
+                    }
+                    .flex-row-text  {
+                        justify-content: unset;
+                        height: unset;
+                    }
+                    .flex-row-text p {
+                        width: auto;
+                        font-size: 20px;
+                        margin-top: 10px;
+                    }
+                     } 
+                     @media (max-width: 500px) {
+                        .case-study-main {
+                            padding: 20px 40px 20px 40px;
+                            max-width:  calc(300px + 80px);
+                                                }
+                        .case-main-image svg {
+                            width:  350px;
+                        }
+                        .case-study-main-detail-parent-text P { 
+                            font-size: 18px;
+                        }
+                        .case-study-main-detail-parent img {
+                            width: 350px;
+                        }
+                         .flex-row img {
+                        width: 400px
+                        
+                    }
+                    .flex-row {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                         } 

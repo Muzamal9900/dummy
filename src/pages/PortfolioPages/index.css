@@ -1,0 +1,174 @@
+.protfolio {
+    background-color: #FBFBFB;
+}
+.protfolio-main {
+  display: flex;
+  flex-direction: column;  
+  padding: 90px 120px 90px 120px;
+
+  max-width:  calc(1690px + 240px);;
+  margin: 0 auto;
+}
+.portfolio-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.protfolio-main-column {
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+
+  
+.portfolio-slide:hover img {
+  transform: scale(1.05); /* Slightly scale up images on hover */
+  filter: blur(4px); /* Apply blur effect on hover */
+}
+
+  
+  /* Typography animation */
+  
+  
+  .portfolio-slide .portfolio-slide-text p {
+    transform: translateY(-10px); /* Move text up slightly on hover */
+    color: #000;
+  }
+  .portfolio-slide:hover .portfolio-slide-text p {
+    transform: translateY(-10px); /* Move text up slightly on hover */
+    color: #6A5ACD;
+  }
+  
+  /* Add keyframe animation for slide entrance */
+  @keyframes slideIn {
+    from {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+ 
+  
+ 
+ 
+  .portfolio-slide {
+    position: relative;
+    overflow: hidden; /* Ensures the slide-up card doesn't exceed the image boundaries */
+  }
+  
+  .summary-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; /* Center the text for a cleaner look */
+    padding: 20px;
+    /* Other styling as needed */
+  }
+  
+  .portfolio-slide:hover .summary-card {
+    opacity: 1;
+    visibility: visible;
+  }
+  .summary-card h3 {
+    margin-top: 0;
+    color: #333; /* Dark color for the title */
+    font-size: 1.5em; /* Larger font size for the title */
+  }
+  
+  .button-class {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px;
+    /* Other styling as needed */
+  }
+  @media (max-width: 1690px) {
+    .protfolio-main {
+      max-width: calc(1450px + 220px);
+      padding: 80px 110px 80px 110px;
+    }
+     }
+     @media (max-width: 1450px) {
+      .protfolio-main {
+        max-width: calc(1210px + 160px);
+        padding: 80px 80px 80px 80px;
+      }
+       }
+       @media (max-width: 1210px) {
+        .protfolio-main {
+          max-width: calc(970px + 160px);
+        }
+         }
+         @media (max-width: 970px) {
+          .protfolio-main {
+            max-width:  calc(723px + 160px);
+            padding: 40px 60px 40px 60px;
+          }
+         
+           .summary-card p {
+             font-size: 1.2em;
+           }
+           }
+           @media (max-width: 730px) {
+         
+            .protfolio-main {
+              max-width:  calc(500px + 120px);
+            padding:  40px 60px 40px 60px;
+             }
+             .summary-card p {
+               font-size: 1em;
+             }
+             }
+
+             .grid-gallery {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+                              gap: 20px;
+             }
+@media (max-width: 500px) { 
+   
+       
+  .protfolio-main {
+    padding: 20px 40px 20px 40px;
+    max-width:  calc(300px + 80px);
+   }
+  
+   }
+ /* index.css */
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+.grid-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05); /* Zoom effect */
+}
+
+.grid-item-title {
+  margin-top: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grid-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

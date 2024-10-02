@@ -1,0 +1,233 @@
+/* General NavBar Styles */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: calc(1690px + 240px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 120px; /* Combined padding-top with other paddings */
+  transition: all 1s ease; /* Keep this single transition */
+}
+
+
+/*  */
+.navBar-item li {
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+  display: inline-block; /* Align items in a row and enable hover effect on the whole area */
+}
+
+/* Pseudo-element for the animated line */
+.navBar-item li::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust based on your design */
+  left: 0;
+  width: 0; /* Start width, will expand on hover */
+  height: 2px; /* Height of the animated line */
+  background: linear-gradient(45deg, rgb(154, 84, 161), rgb(71, 110, 181), rgb(238, 60, 113));
+  transition: width 0.1s ease; /* Smooth transition for the animation */
+
+}
+
+/* Hover effect - expanding the line */
+.navBar-item li:hover::after {
+  width: 100%; /* Full width on hover */
+}
+/*  */
+/*  */
+/* Logo and Menu Items */
+.navBar-logo, .navHeader {
+  display: flex;
+  cursor: pointer;
+  z-index: 999;
+}
+.navBarScrollActive {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
+  background-color:#000; /* Using RGBA for semi-transparent background */
+  transition: all 1s ease; /* Keep this single transition */
+
+}
+
+/* .navBarScrollActive .navBar {
+  padding: 10px 120px 10px 120px;
+}
+.navBarScrollActive .navBar .navBar-logo svg { 
+width: 110px;
+} */
+
+/* Menu Items */
+.navBar-item {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out forwards;   
+}
+.navBar-item li {
+  cursor: pointer;
+}
+.navBar-item a {
+  text-decoration: none; /* Corrected property */
+  color: inherit; /* Inherits color from parent */
+  
+}
+
+.navBar-item li:hover{
+  background: linear-gradient(to right, #9A54A1, #476EB5, #EE3C71, #9a5497);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Makes the text color transparent to reveal the gradient */
+  display: inline-block; /* May be needed to ensure the gradient applies correctly */
+}
+/* Mobile Icon */
+.mobile-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 1690px) {
+.navBar {
+  max-width: calc(1450px + 220px);
+
+  padding: 30px 110px 30px 110px;
+}
+.navBar-item  {
+  gap: 50px;
+}
+}
+@media (max-width:1450px) {
+  .navBar {
+    max-width: calc(1210px + 160px);
+    padding: 20px 80px 20px 80px;
+  }
+  .navBar-item  {
+    gap: 45px;
+  }
+  .navBarScrollActive {
+    padding-bottom: unset;
+}
+  }
+
+@media (max-width: 1210px) {
+  .navBar {
+   
+    max-width:  calc(970px + 160px);
+   
+    
+  }
+  
+
+  .navHeader {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+ 
+  }
+
+  .navBar.active .navHeader {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: fixed;
+    top: 0;
+    
+  }
+  .navBar {
+    position: relative;
+    z-index: 999;
+  }
+
+  .mobile-icon {
+    display: block;
+    z-index: 999;
+  
+  }
+  
+
+  .navBar-item {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .navBar-logo {
+    z-index: 9999;
+  }
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 970px) {
+  .navBar {
+   
+    max-width:  calc(730px + 160px);
+    padding: 20px 80px 20px 80px;
+
+    
+  }
+  
+
+
+}
+@media (max-width: 730px) {
+  .navBar {
+   
+    padding: 20px 60px 20px 60px;
+    max-width:  calc(500px + 120px);
+
+    
+  }
+  
+
+ 
+
+  
+
+  .navBar-item {
+    flex-direction: column;
+    gap: 28px;
+  }
+ 
+}
+@media (max-width: 500px) {
+  .navBar {
+   
+    padding: 20px 40px 20px 40px;
+    max-width:  calc(300px + 80px);
+   
+  }
+
+
+  .navBar-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+ 
+}

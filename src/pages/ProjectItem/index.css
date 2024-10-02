@@ -1,0 +1,217 @@
+.protfolio-item {
+    padding: 20px 120px 90px 120px;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(1690px + 240px);
+    margin: 0 auto;
+}
+.protfolio-main-project-item {
+    display: flex;
+    flex-direction: row;
+}
+.protfolio-main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    padding: 55px;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+.grid-gallery-item-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px 0px 20px 0px;
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
+  justify-items: center; /* Centers the content inside the grid items horizontally */
+  align-content: center; /* Adjust the alignment of the grid items if the grid container has extra space in the cross axis */
+}
+.skeleton-loader-project {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  animation: pulse 1.5s infinite ease-in-out;
+
+}
+.projects-part-first-item {
+  border-radius: 20px;
+  /* background: url("../../assets/gif/whoweare2.gif"); */
+  
+  overflow: hidden ;
+  position: relative;
+ min-width: 650px;
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+.projects-part-first-item-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Start from -50px on the X-axis */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.grid-gallery-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 1s;
+  }
+  
+  .grid-item-product img {
+    width: 100%; /* Makes the image take up the full width of the card */
+  height: 100%; /* Makes the image take up the full height of the card */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-position: center; /* Centers the image within the card */
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+  .grid-item-product {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the image does not spill outside the card */
+height: 100%;
+  }
+  .banner-image img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Spacing between banner and next images */
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 1s;
+  }
+  
+  .top-two-images img {
+    flex-basis: calc(50% - 10px); /* Adjust spacing between two images */
+    object-fit: cover;
+    width: 100%; /* Makes the image take up the full width of the card */
+    height: auto; /* Adjust height automatically */
+    border-radius: 8px; /* Optional: for rounded corners */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 1s;
+  }
+  
+  @media (max-width: 1690px) {
+    .protfolio-item {
+      max-width: calc(1450px + 220px);
+      padding: 20px 110px 80px 110px;
+    }
+     }
+     @media (max-width: 1450px) {
+      .protfolio-item  {
+        max-width: calc(1210px + 160px);
+        padding: 20px 80px 80px 80px;
+      }
+      .projects-part-first-item {
+        min-width: 550px;
+      }
+      .protfolio-main-text {
+        padding: 35px;
+      }
+      .protfolio-main-text p {
+        font-size: 12px;
+      }
+       }
+       @media (max-width: 1210px) {
+        .protfolio-item  {
+          max-width: calc(970px + 160px);
+        }
+        .projects-part-first-item {
+          min-width: 450px;
+        }
+        .protfolio-main-text p {
+          font-size: 10px;
+        }
+         }
+         @media (max-width: 970px) {
+          .protfolio-item  {
+            max-width:  calc(723px + 160px);
+            padding: 10px 60px 40px 60px;
+          }
+          .protfolio-main-project-item {
+            display: flex;
+            flex-direction: column;
+        }
+         
+           }
+           @media (max-width: 730px) {
+         
+            .protfolio-item  {
+              max-width:  calc(500px + 120px);
+            padding:  10px 60px 40px 60px;
+             }
+             .grid-item-product {
+              
+              width: 400px;
+             }
+             .protfolio-main-text {
+              padding: 25px;
+          }
+          .projects-part-first-item  {
+            min-width: 400px;
+          }
+             }
+
+@media (max-width: 500px) { 
+   
+       
+  .protfolio-item  {
+    padding: 10px 40px 20px 40px;
+    max-width:  calc(300px + 80px);
+   }
+   .protfolio-main-text {
+    padding: 15px;
+}
+.protfolio-main-text p {
+  font-size:8px;
+}
+   .grid-item-product {
+              
+    width: 300px;
+   }
+   .projects-part-first-item-video {
+    width: 300px;
+   }
+   }
+
+ 
+  /* Add any additional styles for your grid and items here */
+  

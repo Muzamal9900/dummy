@@ -1,0 +1,161 @@
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+
+.button-components, .button-components-contactUs, .button-selected {
+    padding: 15px 25px 15px 25px;
+    cursor: pointer;
+    display: inline-flex; /* Use inline-flex for better alignment and fit-content behavior */
+    align-items: center;
+    justify-content: center; /* Center the text */
+    background-color: #000; /* Default background color for button-components */
+    color: #fff; /* Default text color */
+    border-radius: 6px;
+    border: 2px solid transparent; 
+    width: fit-content;
+    position: relative; /* Needed for positioning pseudo-elements */
+    overflow: hidden; /* Hide overflow to ensure the pseudo-element's gradient is contained */
+    transition: color 250ms ease; /* Smooth transition for text color */
+    text-wrap: nowrap;
+    transition: all 0.3s ease; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+
+  }
+ 
+  .button-components-contactUs {
+    background-color: #fff; /* Specific background for contactUs button */
+    color: #000; /* Text color for contrast */
+  }
+  
+  .button-components::before, .button-components-contactUs::before {
+    content: '';
+  position: absolute;
+  top: -2px; /* Adjust based on the border size */
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  /* background: linear-gradient(45deg, rgb(154, 84, 161), rgb(71, 110, 181), rgb(238, 60, 113)); */
+  border-radius: 8px; /* Adjust to match the button's border-radius */
+  }
+  .button-selected::before {
+    content: '';
+  position: absolute;
+  top: -2px; /* Adjust based on the border size */
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(45deg, rgb(154, 84, 161), rgb(71, 110, 181), rgb(238, 60, 113));
+  border-radius: 8px; /* Adjust to match the button's border-radius */
+  }
+  
+  .button-components:hover::before, .button-components-contactUs:hover::before , .button-selected:hover::before {
+    left: 0; /* Slide in to be fully visible */
+    opacity: 1; /* Make gradient visible */
+    transform: scale(1.05); /* Slightly increase the button size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  button:hover {
+    transform: scale(1.05); /* Slightly increase the button size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+   @media (max-width: 600px) { 
+   
+    .button-components ,.button-components-contactUs {
+        padding: 10px 40px 10px 40px;
+      
+    }
+   .button-components-contactUs p {
+    font-size: 12px;
+   }
+   .button-components p {
+    font-size: 12px;
+   }
+    }
+    @media (max-width: 1450px) { 
+   
+        .button-components ,.button-components-contactUs {
+            padding: 15px 50px 15px 50px;
+    
+        }
+       .button-components-contactUs p {
+        font-size: 14px;
+       }
+       .button-components p {
+        font-size: 16px;
+       }
+        }
+        @media (max-width: 1200px) { 
+   
+            .button-components ,.button-components-contactUs {
+                padding: 12px 45px 12px 45px;
+        
+            }
+           .button-components-contactUs p {
+            font-size: 12px;
+           }
+           .button-components p {
+            font-size: 12px;
+           }
+            }
+            @media (max-width: 992px) { 
+   
+                .button-components ,.button-components-contactUs {
+                    padding: 10px 40px 10px 40px;
+            text-wrap: nowrap;
+                }
+               .button-components-contactUs p {
+                font-size: 12px;
+               }
+               .button-components p {
+                font-size: 12px;
+               }
+                }
+                @media (max-width: 450px) { 
+   
+                    .button-components ,.button-components-contactUs {
+                        padding: 8px 30px 8px 30px;
+                
+                    }
+                   .button-components-contactUs p {
+                    font-size: 8px;
+                   }
+                   .button-components p {
+                    font-size: 8px;
+                   }
+                    }
+                    button {
+                        background: #fff;
+                        border: none;
+                        padding: 10px 20px;
+                        display: inline-block;
+                        font-size: 15px;
+                        font-weight: 600;
+                        width: 120px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transform: skew(-1deg);
+                      }
+                      
+                      button span {
+                        display: inline-block;
+                      }
+                    
+                      
+                    
+                      
+                      button:hover::before {
+                        left: 0;
+                        right: 0;
+                        opacity: 1;
+                      }

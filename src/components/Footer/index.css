@@ -1,0 +1,238 @@
+
+.Footer-Section-wrapper {
+    padding: 60px 0px 60px 0px;
+   
+}
+.Footer-Section {
+  
+    max-width:calc(1690px + 240px);;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px 0px 120px;
+    
+}
+.Footer-Section-first {
+    display: flex;
+    flex-direction: column;
+
+} 
+.Footer-Section-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-wrap: nowrap;
+    margin-right: 5px;
+}
+.Footer-Section-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.flex-row-fb {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: center;
+}
+.Footer-Section-third-mobile {
+    display: none;
+}
+.flex-row-dip p {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    align-items: center;
+}
+.flex-row-insta p {
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+    align-items: center;
+}
+.flex-row-insta p:hover, .flex-row-dip p:hover, .flex-row-beh p:hover, .flex-row-fb p:hover,.flex-row p:hover {
+    background: linear-gradient(45deg, rgb(154, 84, 161), rgb(71, 110, 181), rgb(238, 60, 113));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.flex-row-beh p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.icon-container {
+    position: relative;
+    display: inline-block; /* or 'block' depending on your layout */
+  }
+  
+  /* Invisible pseudo-element by default */
+  .icon-container::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Positioned directly below the icon */
+    left: 0;
+    width: 100%; /* Match the width of the icon */
+    height: 10px; /* Height of the shadow */
+    background: linear-gradient(45deg, rgb(154, 84, 161), rgb(71, 110, 181), rgb(238, 60, 113));
+    opacity: 0; /* Make it invisible */
+    transition: opacity 0.3s ease, top 0.3s ease;
+    border-radius: 4px; /* Match the border-radius of the icon, if it has any */
+    filter: blur(4px); /* Adjust the blur to soften the shadow */
+    z-index: -1;
+  }
+  
+  /* On hover, make the pseudo-element visible and move it up to create the shadow effect */
+  .icon-container:hover::after {
+    opacity: 1; /* Make it visible */
+    top: calc(100% - 5px); /* Adjust top to move the shadow to the desired position */
+  }
+@media (max-width: 1690px) {
+    .Footer-Section {
+        max-width: calc(1450px + 220px);
+        padding:  0px 110px 0px 110px;
+    }
+   
+    }
+@media (max-width: 1450px) { 
+    .Footer-Section {
+        max-width:  calc(1210px + 160px);
+        padding:  0px 80px 0px 80px;
+      }
+    .Footer-Section-first p {
+        font-size: 14px;
+    }
+    .flex-row p {
+     font-size: 14px;
+    }
+    .Footer-Section-third p {
+     font-size: 14px;
+    }
+    .Footer-Section-wrapper {
+       padding: 50px 0px 50px 0px;
+        
+    }
+
+ }
+@media (max-width: 1210px) { 
+    .Footer-Section {
+        max-width: calc(970px + 160px);
+      }
+       .Footer-Section-first p {
+           font-size: 12px;
+       }
+       .flex-row p {
+        font-size: 12px;
+       }
+       .Footer-Section-third p {
+        font-size: 12px;
+       }
+   
+    }
+    @media (max-width: 970px) { 
+        .Footer-Section {
+            max-width:  calc(730px + 160px);
+            padding:  0px 60px 0px 60px;
+          }
+        .Footer-Section {
+            flex-direction: column;
+        }
+          
+       .Footer-Section-third {
+        display: none;
+       }
+       .Footer-Section-last {
+        flex-direction: row;
+        margin-top: 20px;
+    
+       }
+       .Footer-Section-last p {
+        display: none;
+     
+       }
+       .Footer-Section-third-mobile {
+        display: unset;
+        margin-top: 20px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       }
+       .Footer-Section-third p {
+        font-size: 12px;
+       }
+       .Footer-Section-wrapper {
+        padding: 30px 0px 30px 0px;
+       }
+        }
+        @media (max-width: 730px) { 
+            .Footer-Section {
+                max-width:  calc(500px + 120px);
+                padding:  0px 60px 0px 60px;
+              }
+            .Footer-Section {
+                flex-direction: column;
+            }
+              
+           .Footer-Section-third {
+            display: none;
+           }
+           .Footer-Section-last {
+            flex-direction: row;
+            margin-top: 20px;
+        
+           }
+           .Footer-Section-last p {
+            display: none;
+         
+           }
+           .Footer-Section-third-mobile {
+            display: unset;
+            margin-top: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+           }
+           .Footer-Section-third p {
+            font-size: 12px;
+           }
+            }
+    @media (max-width: 500px) { 
+    .Footer-Section {
+        flex-direction: column;
+        padding: 0px 40px 0px 40px;
+                    max-width:  calc(300px + 80px);
+
+    }
+    .Footer-Section-first p {
+        font-size: 12px;
+    }
+    .flex-row p {
+     font-size: 12px;
+    }
+    .Footer-Section-third p {
+     font-size: 12px;
+    }
+   .Footer-Section-third {
+    display: none;
+   }
+   .Footer-Section-last {
+    flex-direction: row;
+    margin-top: 20px;
+
+   }
+   .Footer-Section-last p {
+    display: none;
+ 
+   }
+   .Footer-Section-third-mobile {
+    display: unset;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
+    }

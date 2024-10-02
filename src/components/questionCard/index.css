@@ -1,0 +1,11 @@
+.question-card {
+    display: flex;
+    padding: 36px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    border-top-left-radius: 8px; /* Adjust the value as needed */
+  border-top-right-radius: 8px;
+    cursor: pointer;
+}

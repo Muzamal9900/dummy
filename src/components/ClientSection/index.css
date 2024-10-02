@@ -1,0 +1,222 @@
+    .client-wrapper {
+    padding: 90px 0px 90px 0px;
+    background-color: #0F0F0F;
+  
+}
+.ClientSection {
+    max-width: calc(1690px + 240px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 120px 0px 120px;
+}
+.ClientSection-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 112px;
+}
+.ClientSection-details {
+    display: flex;
+    gap: 200px
+    
+}
+.ClientSection-details-text {
+    width: 665px;
+    max-width: 665px;
+}
+.ClientSection-details-Video {
+    border-radius: 23px;
+    max-height: 534px;
+    position: relative;
+    object-fit: cover; /* This will ensure the video covers the area without being distorted */
+}
+
+.ClientSection-details-PlayButton {
+    position: absolute;
+    background-image: url('../../assets/images/playButton.png');
+    background-size: cover;
+    background-position: center;
+    top: 50%; /* Center the button vertically */
+    left: 50%; /* Center the button horizontally */
+    transform: translate(-50%, -50%); /* This will perfectly center the button */
+    width: 100px; /* The width of your play button */
+    height: 100px; /* The height of your play button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the play button */
+    z-index: 99999999;
+}
+.arrow-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.parent-video {
+    position: relative;
+}
+.ClientSection-details-PlayButton {
+    position: absolute;
+}
+.ClientSection-details-name {
+   margin-top: 153px;
+ display: flex;
+ flex-direction: column;
+}
+.ClientSection-details-arrow {
+    margin-top: 55px;
+}
+@media (max-width: 1690px) {
+    .ClientSection {
+        max-width: calc(1450px + 220px);
+        padding:  0px 110px 0px 110px;
+    }
+    .client-wrapper {
+        padding: 80px 0px 80px 0px; 
+    }
+     }
+@media (max-width: 1450px) { 
+    .ClientSection {
+        max-width:  calc(1210px + 160px);
+        padding:  0px 80px 0px 80px;
+       }
+    .ClientSection-text p {
+        font-size: 56px;
+    }
+    .ClientSection-details {      
+        gap: 150px;
+    }
+    .ClientSection-details-text p {
+        font-size: 26px;
+    }
+    .ClientSection-details-name P {
+        font-size: 22px;
+    }
+    .ClientSection-details-Image {
+        width: 780px;
+        max-width:780px;
+        height: 684px;
+        max-height:684px;
+    }
+    .client-wrapper {
+        padding: 80px 0px 80px 0px;
+      }
+    }
+    @media (max-width: 1210px) { 
+   
+        .ClientSection {
+            max-width: calc(970px + 160px);
+           }
+        .ClientSection-details {      
+            gap: 100px;
+        }
+        .ClientSection-details-text p {
+            font-size: 24px;
+        }
+        .ClientSection-details-name P {
+            font-size: 20px;
+        }
+        .ClientSection-details-Image {
+            width: 720px;
+            max-width:720px;
+            height: 624px;
+            max-height:624px;
+        }
+        .client-wrapper {
+            padding: 80px 0px 80px 0px;
+        }
+        }
+       
+        @media (max-width: 970px) { 
+   
+            .ClientSection {
+                max-width:  calc(730px + 160px);
+                padding:  0px 60px 0px 60px;
+               }
+               .client-wrapper {
+                padding:  40px 0px 40px 0px;
+               }
+            .ClientSection-details {      
+                gap: 50px;
+            }
+            .ClientSection-details-text p {
+                font-size: 20px;
+            }
+            .ClientSection-details-name P {
+                font-size: 18px;
+            }
+            .ClientSection-details-Image {
+                width: 670px;
+                max-width:670px;
+                height: 580px;
+                max-height:580px;
+            }
+            .client-wrapper {
+                padding: 70px 0px 70px 0px;
+            }
+            }
+            @media (max-width: 730px) { 
+   
+                .ClientSection {
+                    max-width:  calc(500px + 120px);
+                    padding:  0px 60px 0px 60px;
+                   }
+                .ClientSection-details {      
+                    gap: 50px;
+                }
+                .ClientSection-details-text p {
+                    font-size: 14px;
+                }
+                .ClientSection-details-name P {
+                    font-size: 18px;
+                }
+                .ClientSection-details-Image {
+                    width: 715px;
+                    max-width: 670px;
+                    height: 260px;
+                    max-height: 580px;
+                }
+                .client-wrapper {
+                    padding:  40px 0px 40px 0px;                }
+                }
+            @media (max-width: 500px) { 
+                .ClientSection {
+                    padding: 0px 40px 0px 40px;
+                    max-width:  calc(300px + 80px);
+                   }
+       
+                .ClientSection-details {      
+                    gap: 50px;
+                }
+                .ClientSection-details-PlayButton {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                .ClientSection-details-text p {
+                    font-size: 16px;
+                }
+                .ClientSection-details-name P {
+                    font-size: 18px;
+                }
+                .ClientSection-details-Image {
+                    width: 715px;
+                    max-width: 670px;
+                    height: 522px;
+                    max-height: 580px;
+                }
+                .ClientSection-text p {
+                    font-size: 28px;
+                }
+                .ClientSection-details-Image {
+                    display: none;
+                }
+                .ClientSection-text {
+                    margin-bottom: 40px;
+                }
+                .ClientSection-details-name {
+                    margin-top: 40px;
+                }
+                .client-wrapper {
+                    padding:  20px 0px 20px 0px;
+                }
+                }
+          
